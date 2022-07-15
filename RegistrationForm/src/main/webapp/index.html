@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type"content="text/html; charset=UTF-8">
+<title>Registration form</title>
+<style>
+    .container{
+         width:30%;
+         border:1px solid black;
+         margin:auto;
+         padding:20px;
+         font_size:20px;
+         
+    }
+
+</style>
+</head>
+<body>
+<div class="container">
+<h1>My Form</h1>
+<form  method="get" action="HelloServlet">
+<table>
+
+<tr>
+<td>Enter your name :</td>
+<td><input type="text" name="user_name" placeholder="Enter here"/></td>
+</tr>
+
+<tr>
+<td>Enter your password :</td>
+<td><input type="password" name="user_password" placeholder="Enter here"/></td>
+</tr>
+
+<tr>
+<td>Enter your email :</td>
+<td><input type="text" name="user_email" placeholder="Enter here"/></td>
+</tr>
+
+<tr>
+<td>Select Gender :</td>
+<td><input type="radio" name="user_gender" value="male">Male &nbsp; &nbsp; <input type="radio" name="user_gender" value="female" >Female</td>
+</tr>
+
+<tr>
+<td>Select your course</td>
+<td><select name="user_course">
+    <option value="Java">Java</option>
+    <option value="Php">Php</option>
+    <option value="C++">C++</option>
+    <option value="Python">Python</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td style="text-align: right;">
+<input type="checkbox" value="checked" name="condition1"/></td>
+<td>Show current date and time</td>
+<tr>
+
+<tr>
+<td style="text-align: right;">
+<input type="checkbox" value="checked" name="condition2"/></td>
+<td>Agree terms and conditions</td>
+<tr>
+
+<tr>
+<td> </td>
+<td><input type="submit" value="Submit">
+    <button type="reset">Reset</button>
+</td>
+</tr>
+
+</table>
+
+</form>
+</div>
+</body>
+</html>
